@@ -31,37 +31,8 @@ $green: #A8F759;
 	}
 }
 
-html, body {
-	height: 100%;
-	margin: 0;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-	box-sizing: border-box;
-	padding: 150px;
-}
-
-
-a {
-	text-decoration: none;
-	color: unset;
-
-	&.red {
-		@include underline($red);
+@mixin color-background($image) {
+	.#{$image}:hover {
+		background: url("/assets/page/#{$image}-color.svg") no-repeat;
 	}
-	&.yellow {
-		@include underline($yellow);
-	}
-	&.green {
-		@include underline($green);
-	}
-}
-
-p {
-	font-size: 80px;
-	margin: 40px 0;
 }

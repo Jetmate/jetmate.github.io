@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
-<canvas class="background"></canvas>
+<div class="header row">
+	<h1>{{ page.title | capitalize }}</h1>
+	<img src="assets/page/headers/{{ page.title }}.svg">
+	<a class="home" href="/">
+		<img src="assets/page/home.svg">
+	</a>
+</div>
 {{ content }}
-<script src="/js/background.js"></script>
