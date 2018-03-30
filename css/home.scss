@@ -20,6 +20,7 @@
 	justify-content: space-evenly;
 	align-items: center;
 	@include color-background("dribbble");
+	@include color-background("linkedin");
 	@include color-background("github");
 	@include color-background("twitter");
 	@include color-background("email");
