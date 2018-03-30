@@ -1,0 +1,67 @@
+$width: 10px;
+$red: #F75959;
+$yellow: #FFDF36;
+$green: #A8F759;
+
+@mixin underline($color) {
+	position: relative;
+	&:after {
+		content: "";
+		background: $color;
+		position: absolute;
+		height: $width;
+		width: 100%;
+		left: 0;
+		bottom: 6px;
+		z-index: -1;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		background: $color;
+		width: 100%;
+		height: 0%;
+		transition-duration: .4s;
+		z-index: -1;
+	}
+	&:hover {
+		&:before {
+			height: 90%;
+		}
+	}
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	padding: 150px;
+}
+
+
+a {
+	text-decoration: none;
+	color: unset;
+
+	&.red {
+		@include underline($red);
+	}
+	&.yellow {
+		@include underline($yellow);
+	}
+	&.green {
+		@include underline($green);
+	}
+}
+
+p {
+	font-size: 80px;
+	margin: 40px 0;
+}
