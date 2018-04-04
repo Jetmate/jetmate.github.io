@@ -4,13 +4,15 @@
 @import "definitions";
 
 a {
-	@include add-underline(4vw);
+	color: black;
+	text-decoration: none;
 }
 
 h2 {
 	font-weight: normal;
-	b {
-		margin-right: .4vw;
+	.date {
+		font-weight: bold;
+		margin-right: 1.6vw;
 	}
 }
 
@@ -18,10 +20,14 @@ h2 {
 	h2 {
 		font-size: $p-size;
 		margin-bottom: $margin-size;
+		.date {
+			@include add-underline($p-size);
+		}
 	}
-
-	a {
-		@include add-underline($p-size);
+	@media (min-width: 700px) {
+		a {
+			@include add-underline($p-size);
+		}
 	}
 }
 @include text(3vw, 1vw);

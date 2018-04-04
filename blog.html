@@ -5,7 +5,8 @@ permalink: blog/
 ---
 
 {% for post in site.posts %}
-	<h2><a class="{{ post.color }}" href="{{ post.url }}">
-		<b>{{ post.date | date: '%B %d' }}</b> {{ post.title }}
+	<h2><a href="{{ post.url }}" class="{{ post.color }}">
+		<span class="date {{ post.color }}">{{ post.date | date: '%B %d' }}</span>
+		<span class="title">{{ post.title }}</span>
 	</a></h2>
 {% endfor %}

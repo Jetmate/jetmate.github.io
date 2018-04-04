@@ -5,6 +5,7 @@ $blue: #59D1F7;
 
 @mixin underline($color, $font-size) {
 	position: relative;
+	// text-decoration: underline $color;
 	$width: $font-size / 5;
 	&:after {
 		content: "";
