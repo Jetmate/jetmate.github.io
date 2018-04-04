@@ -21,7 +21,6 @@
 		width: 100%;
 	}
 }
-
 .content {
 	img {
 		margin: 3vw auto;
@@ -73,8 +72,13 @@
 	.header {
 		padding-bottom: 4vh;
 	}
-	.content img {
-		width: 100%;
-		margin: 5vw auto;
+	.content {
+		p, li {
+			font-size: 20px;
+		}
+		img {
+			width: 100%;
+			margin: 5vw auto;
+		}
 	}
 }

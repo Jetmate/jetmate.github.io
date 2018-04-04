@@ -5,6 +5,10 @@
 
 $media-1: 1000px;
 
+.content {
+	flex: 1 0 auto;
+}
+
 .content.row {
 	justify-content: space-between;
 }
@@ -87,5 +91,12 @@ $media-1: 1000px;
 	}
 	.other {
 		margin-top: 7vw;
+	}
+	.feed  {
+		position: relative;
+		flex-shrink: 0;
+		align-self: flex-end;
+		margin-top: 6vw;
+		margin-bottom: 3vw;
 	}
 }
