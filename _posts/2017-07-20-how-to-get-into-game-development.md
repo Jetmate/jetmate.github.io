@@ -1,3 +1,8 @@
+---
+title: how to get into game development
+color: yellow
+---
+
 The number of language options that you have in Game Development is so large that it's worth covering them first, before we dive into the actual learning phase:
 
 * OOP languages

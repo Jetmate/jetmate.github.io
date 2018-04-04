@@ -17,5 +17,6 @@ defaults:
 - scope:
     type: posts
   values:
-    permalink: posts/:title/
-    layout: post
+    permalink: blog/:title/
+    layout: page
+    post: "true"

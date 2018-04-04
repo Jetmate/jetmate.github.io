@@ -1,5 +1,6 @@
 ---
 title: how to get into web development
+color: blue
 ---
 
 If you're like me, you've probably procrastinated learning anything web-related because of how unordered and even 'artsy' it all seems - HTML isn't even a programming language! Why would a coder waste their time on it?

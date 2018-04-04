@@ -1,10 +1,11 @@
-$width: 10px;
 $red: #F75959;
 $yellow: #FFDF36;
-$green: #A8F759;
+$green: #75FF69;
+$blue: #59D1F7;
 
-@mixin underline($color) {
+@mixin underline($color, $font-size) {
 	position: relative;
+	$width: $font-size / 5;
 	&:after {
 		content: "";
 		background: $color;
@@ -12,12 +13,13 @@ $green: #A8F759;
 		height: $width;
 		width: 100%;
 		left: 0;
-		bottom: 6px;
 		z-index: -1;
+		bottom: 0;
 	}
 	&:before {
 		content: "";
 		position: absolute;
+		bottom: 0;
 		background: $color;
 		width: 100%;
 		height: 0%;
@@ -26,13 +28,33 @@ $green: #A8F759;
 	}
 	&:hover {
 		&:before {
-			height: 80%;
+			height: $font-size;
 		}
+	}
+}
+
+@mixin add-underline($font-size) {
+	text-decoration: none;
+	color: unset;
+
+	&.red {
+		@include underline($red, $font-size);
+	}
+	&.yellow {
+		@include underline($yellow, $font-size);
+	}
+	&.green {
+		@include underline($green, $font-size);
+	}
+	&.blue {
+		@include underline($blue, $font-size);
 	}
 }
 
 @mixin color-background($image) {
 	.#{$image}:hover {
-		background: url("/assets/page/#{$image}-color.svg") no-repeat;
+		background-image: url("/assets/page/#{$image}-color.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
 	}
 }

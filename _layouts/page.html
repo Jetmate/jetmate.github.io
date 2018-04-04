@@ -3,9 +3,21 @@ layout: default
 ---
 <div class="header row">
 	<h1>{{ page.title | capitalize }}</h1>
-	<img src="assets/page/headers/{{ page.title }}.svg">
-	<a class="home" href="/">
-		<img src="assets/page/home.svg">
-	</a>
+	{% if page.post != "true" %}
+		<div class="decoration"><img src="/assets/page/headers/{{ page.title }}.svg"></div>
+		<a class="home" href="/">
+			<img src="/assets/page/home.svg">
+		</a>
+	{% else %}
+		<a class="home" href="/blog">
+			<img src="/assets/page/home.svg">
+		</a>
+	{% endif %}
 </div>
+{% if page.post != "true" %}
 {{ content }}
+{% else %}
+<div class="content">
+	{{ content }}
+</div>
+{% endif %}

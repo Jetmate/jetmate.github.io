@@ -1,0 +1,28 @@
+---
+---
+
+@import "definitions";
+
+.works {
+	margin-bottom: 7vw;
+	a {
+		margin: 1vw;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1100px) {
+	.works {
+		.row {
+			flex-direction: column;
+			align-items: center;
+		}
+		img {
+			height: 45vw;
+			margin-top: 3vw;
+		}
+	}
+}

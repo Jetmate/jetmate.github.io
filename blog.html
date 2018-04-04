@@ -1,4 +1,11 @@
 ---
 layout: page
 title: blog
+permalink: blog/
 ---
+
+{% for post in site.posts %}
+	<h2><a class="{{ post.color }}" href="{{ post.url }}">
+		<b>{{ post.date | date: '%B %d' }}</b> {{ post.title }}
+	</a></h2>
+{% endfor %}

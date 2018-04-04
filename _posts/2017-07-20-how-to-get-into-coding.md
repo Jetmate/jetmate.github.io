@@ -1,5 +1,6 @@
 ---
 title: how to get into coding
+color: green
 ---
 
 Knowing how to code is the closest that anyone can ever come to possessing a superpower. Almost everything that you use on a daily basis is powered by code, and vice versa: code can power and change everything. And yet, the skill gap grows, and diversity in tech isn't improving. Why, then, is it so difficult to learn how to code? I'd argue that it's because many approach it from the wrong angle.

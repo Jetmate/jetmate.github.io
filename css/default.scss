@@ -5,37 +5,9 @@
 @import "grid";
 @import "definitions";
 
-@include color-background("home");
 
 body {
-	padding: 150px;
-}
-
-a {
-	text-decoration: none;
-	color: unset;
-
-	&.red {
-		@include underline($red);
-	}
-	&.yellow {
-		@include underline($yellow);
-	}
-	&.green {
-		@include underline($green);
-	}
-}
-
-p {
-	font-size: 80px;
-	margin: 40px 0;
-}
-
-h1 {
-	font-size: 100px;
-}
-
-.header {
-	justify-content: space-between;
-	align-items: center;
+	padding: 7vw;
+	background: #FFFFF7;
+	font-family: Lato;
 }
